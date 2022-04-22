@@ -29,6 +29,14 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* ======= Header Section/Seção do Cabeçalho ======= */
+.header .contact-info {
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2597f4;
+}
+
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 991px) {
   html {

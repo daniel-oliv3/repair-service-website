@@ -21,6 +21,25 @@ $border: .2rem solid $black;
 $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 
 
+@mixin grid($val){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+}
+
+@mixin titleText($titleSize){
+    font-size: $titleSize;
+    text-transform: capitalize;
+    color: $black;
+}
+
+@mixin graphText($graphSize){
+    font-size: $graphSize;
+    line-height: 2;
+    color: $light-color;
+}
+
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -44,7 +63,16 @@ html {
 
 
 /* ======= Header Section/Seção do Cabeçalho ======= */
+.header {
 
+    .contact-info {
+        padding: 2rem 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $blue;
+    }
+}
 
 
 
