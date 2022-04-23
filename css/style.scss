@@ -258,6 +258,7 @@ section {
 
 /* ======= Services Section/Seção de Serviços ======= */
 .services {
+    background: $light-bg;
 
     .box-container {
         @include grid(30rem);
@@ -268,6 +269,32 @@ section {
             border: $border;
             box-shadow: $box-shadow;
             padding: 3rem 2rem;
+
+            &:hover {
+                background: $black;
+
+                h3 {
+                    color: $white;
+                }
+
+                p {
+                    color: $white;
+                }
+            }
+
+            img {
+                height: 7rem;
+                margin-bottom: .5rem;
+            }
+
+            h3 {
+                @include titleText(2rem);
+                padding: 1rem 0;
+            }
+
+            p {
+                @include graphText(1.5rem);
+            }
         }
     }
 }
