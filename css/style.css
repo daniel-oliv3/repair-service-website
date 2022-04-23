@@ -51,6 +51,8 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   background: #fff;
   border-bottom: 0.2rem solid #334;
+  position: relative;
+  z-index: 1000;
 }
 .header .navbar .logo {
   font-size: 2.5rem;
@@ -62,7 +64,7 @@ html::-webkit-scrollbar-thumb {
   color: #2597f4;
 }
 .header .navbar .links a {
-  margin-right: 2rem;
+  margin-left: 2rem;
   font-size: 2rem;
   text-transform: capitalize;
   color: #334;
@@ -71,11 +73,58 @@ html::-webkit-scrollbar-thumb {
   text-decoration: underline;
   color: #2597f4;
 }
+.header #menu-btn {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #334;
+  display: none;
+}
 
 /* ======= Responsive/Responsividade ======= */
+@media (max-width: 1200px) {
+  .header .contact-info {
+    padding: 2rem 5%;
+  }
+  .header .navbar {
+    padding: 2rem 5%;
+  }
+}
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+
+  .header .contact-info {
+    padding: 2rem;
+  }
+  .header .navbar {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .navbar .links {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.2rem solid #334;
+    border-bottom: 0.2rem solid #334;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar .links.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar .links a {
+    display: block;
+    margin: 2.5rem 2rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 450px) {
