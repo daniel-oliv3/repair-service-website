@@ -61,6 +61,25 @@ html {
 }
 
 
+section {
+    padding: 5rem 10%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background: $white;
+    @include titleText(1.7rem);
+    border: $border;
+
+    &:hover {
+        background: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+}
 
 /* ======= Header Section/Seção do Cabeçalho ======= */
 .header {
@@ -135,8 +154,34 @@ html {
 
 
 
+/* ======= Home Section/Seção inicial ======= */
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 
+    .image {
+        flex: 1 1 40rem;
 
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        flex: 1 1 40rem;
+
+        h3 {
+            @include titleText(4.5rem);
+        }
+
+        p {
+            @include graphText(1.5rem);
+            padding: 1rem 0;
+        }
+    }
+}
 
 
 
@@ -233,6 +278,10 @@ html {
         }
     }
 
+    section {
+        padding: 3rem 5%;
+    }
+
 }
 
 @media (max-width: 991px){
@@ -250,6 +299,10 @@ html {
         .navbar {
             padding: 2rem;
         }
+    }
+
+    section {
+        padding: 3rem 2rem;
     }
 }
 
@@ -301,6 +354,10 @@ html {
 
     html {
         font-size: 50%;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
     }
 
 }
