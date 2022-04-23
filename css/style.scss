@@ -185,8 +185,31 @@ section {
 
 
 
+/* ======= Fun Fact Section/Seção de curiosidades ======= */
+.fun-fact {
+    @include grid(25rem);
+    background: $light-bg;
+    gap: 3.5rem;
 
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
 
+        img {
+            height: 10rem;
+        }
+
+        h3 {
+            @include titleText(4rem);
+        }
+
+        p {
+            @include graphText(1.5rem);
+            padding-top: .5rem;
+        }
+    }
+}
 
 
 
@@ -347,6 +370,16 @@ section {
             }
         }
     }
+
+    .fun-fact {
+
+        padding: 5rem 2rem;
+
+        .box {
+            flex-flow: column;
+            text-align: center;
+        }
+    }    
 
 }
 
