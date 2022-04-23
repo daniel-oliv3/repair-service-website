@@ -312,6 +312,16 @@ section {
 
         .box {
             height: 25rem;
+            overflow: hidden;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }

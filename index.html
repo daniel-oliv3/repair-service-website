@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<!-- cdnjs font awesome link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 </head>
 <body>
 
@@ -138,12 +139,12 @@
 <section class="gallery" id="gallery">
 	<h1 class="heading">Nossa <span>galeria</span></h1>
 	<div class="gallery-container">
-		<a href="img/g-img-1.jpg"><img src="img/g-img-1.jpg" alt=""></a>
-		<a href="img/g-img-2.jpg"><img src="img/g-img-2.jpg" alt=""></a>
-		<a href="img/g-img-3.jpg"><img src="img/g-img-3.jpg" alt=""></a>
-		<a href="img/g-img-4.jpg"><img src="img/g-img-4.jpg" alt=""></a>
-		<a href="img/g-img-5.jpg"><img src="img/g-img-5.jpg" alt=""></a>
-		<a href="img/g-img-6.jpg"><img src="img/g-img-6.jpg" alt=""></a>
+		<a class="box" href="img/g-img-1.jpg"><img src="img/g-img-1.jpg" alt=""></a>
+		<a class="box" href="img/g-img-2.jpg"><img src="img/g-img-2.jpg" alt=""></a>
+		<a class="box" href="img/g-img-3.jpg"><img src="img/g-img-3.jpg" alt=""></a>
+		<a class="box" href="img/g-img-4.jpg"><img src="img/g-img-4.jpg" alt=""></a>
+		<a class="box" href="img/g-img-5.jpg"><img src="img/g-img-5.jpg" alt=""></a>
+		<a class="box" href="img/g-img-6.jpg"><img src="img/g-img-6.jpg" alt=""></a>
 	</div>
 </section>
 
@@ -156,8 +157,11 @@
 
 
 
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>	
 	<script src="js/script.js"></script>
+	<script>
+		lightGallery(document.querySelector('.gallery .gallery-container'));
+	</script>
 </body>
 </html>
 
