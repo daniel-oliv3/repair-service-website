@@ -65,6 +65,17 @@ section {
     padding: 5rem 10%;
 }
 
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    @include titleText(4rem);
+
+
+    span {
+        color: $blue;
+    }
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -162,7 +173,7 @@ section {
     gap: 3rem;
 
     .image {
-        flex: 1 1 40rem;
+        flex: 1 1 42rem;
 
         img {
             width: 100%;
@@ -170,7 +181,7 @@ section {
     }
 
     .content {
-        flex: 1 1 40rem;
+        flex: 1 1 42rem;
 
         h3 {
             @include titleText(4.5rem);
@@ -246,7 +257,20 @@ section {
 
 
 /* ======= Services Section/Seção de Serviços ======= */
+.services {
 
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            text-align: center;
+            background: white;
+            border: $border;
+            box-shadow: $box-shadow;
+            padding: 3rem 2rem;
+        }
+    }
+}
 
 
 

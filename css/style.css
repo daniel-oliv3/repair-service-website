@@ -32,6 +32,17 @@ section {
   padding: 5rem 10%;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #334;
+}
+.heading span {
+  color: #2597f4;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -117,13 +128,13 @@ section {
   gap: 3rem;
 }
 .home .image {
-  flex: 1 1 40rem;
+  flex: 1 1 42rem;
 }
 .home .image img {
   width: 100%;
 }
 .home .content {
-  flex: 1 1 40rem;
+  flex: 1 1 42rem;
 }
 .home .content h3 {
   font-size: 4.5rem;
@@ -195,6 +206,19 @@ section {
 }
 
 /* ======= Services Section/Seção de Serviços ======= */
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.services .box-container .box {
+  text-align: center;
+  background: white;
+  border: 0.2rem solid #334;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+}
+
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 1200px) {
   .header .contact-info {
