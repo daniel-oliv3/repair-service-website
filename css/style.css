@@ -54,6 +54,14 @@ html::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 1000;
 }
+.header .navbar.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 .header .navbar .logo {
   font-size: 2.5rem;
   text-transform: capitalize;
@@ -102,6 +110,9 @@ html::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 768px) {
+  .header .contact-info {
+    display: none;
+  }
   .header #menu-btn {
     display: inline-block;
   }

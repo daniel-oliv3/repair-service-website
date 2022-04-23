@@ -9,7 +9,16 @@ menu.onclick = () => {
     navbarLinks.classList.toggle('active');
 }
 
+menu.onscroll = () => {
+    menu.classList.remove('fa-times');
+    navbarLinks.classList.remove('active');
 
+    if(window.scrollY > 60){
+        document.querySelector('.header .navbar').classList.add('active');
+    }else {
+        document.querySelector('.header .navbar').classList.remove('active');
+    }
+}
 
 
 

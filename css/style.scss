@@ -93,6 +93,15 @@ html {
         position: relative;
         z-index: 1000;
 
+        &.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-bottom: none;
+            box-shadow: $box-shadow;
+        }
+
         .logo {
             @include titleText(2.5rem);
             font-weight: bolder;
@@ -244,9 +253,14 @@ html {
     }
 }
 
+
 @media (max-width: 768px){
 
     .header {
+
+        .contact-info {
+            display: none;
+        }
         
         #menu-btn {
             display: inline-block;
