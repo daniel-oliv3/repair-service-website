@@ -213,8 +213,34 @@ section {
 
 
 
+/* ======= About Section/Seção Sobre nós ======= */
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 3rem;
 
+    .image {
+        flex: 1 1 40rem;
 
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        flex: 1 1 40rem;
+
+        h3 {
+            @include titleText(3rem);
+        }
+
+        p {
+            @include graphText(1.5rem);
+            padding: 1rem 0;
+        }
+    }
+}
 
 
 
