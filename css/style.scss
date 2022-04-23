@@ -229,10 +229,11 @@ section {
     }
 
     .content {
-        flex: 1 1 40rem;
+        flex: 1 1 42rem;
 
         h3 {
             @include titleText(3rem);
+            padding-bottom: .5rem
         }
 
         p {
@@ -244,7 +245,7 @@ section {
 
 
 
-
+/* ======= Services Section/Seção de Serviços ======= */
 
 
 

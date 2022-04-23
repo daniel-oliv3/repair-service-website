@@ -179,12 +179,13 @@ section {
   width: 100%;
 }
 .about .content {
-  flex: 1 1 40rem;
+  flex: 1 1 42rem;
 }
 .about .content h3 {
   font-size: 3rem;
   text-transform: capitalize;
   color: #334;
+  padding-bottom: 0.5rem;
 }
 .about .content p {
   font-size: 1.5rem;
@@ -193,6 +194,7 @@ section {
   padding: 1rem 0;
 }
 
+/* ======= Services Section/Seção de Serviços ======= */
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 1200px) {
   .header .contact-info {
