@@ -246,6 +246,16 @@ section {
   color: #777;
 }
 
+/* ======= Gallery Section/Seção de Galeria ======= */
+.gallery .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.gallery .gallery-container .box {
+  height: 25rem;
+}
+
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 1200px) {
   .header .contact-info {

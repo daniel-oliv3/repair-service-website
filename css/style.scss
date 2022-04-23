@@ -302,8 +302,19 @@ section {
 
 
 
+/* ======= Gallery Section/Seção de Galeria ======= */
+.gallery {
+
+    .gallery-container {
+
+        @include grid(30rem);
 
 
+        .box {
+            height: 25rem;
+        }
+    }
+}
 
 
 
