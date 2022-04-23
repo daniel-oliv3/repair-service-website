@@ -36,6 +36,41 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   background: #2597f4;
 }
+.header .contact-info p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.header .contact-info p i {
+  padding-right: 0.5rem;
+  color: yellow;
+}
+.header .navbar {
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 0.2rem solid #334;
+}
+.header .navbar .logo {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #334;
+  font-weight: bolder;
+}
+.header .navbar .logo i {
+  color: #2597f4;
+}
+.header .navbar .links a {
+  margin-right: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #334;
+}
+.header .navbar .links a:hover {
+  text-decoration: underline;
+  color: #2597f4;
+}
 
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 991px) {
