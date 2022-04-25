@@ -569,7 +569,54 @@ section {
 
 
 /* ======= Footer Section/Seção de Rodapé ======= */
+.footer {
+    background: $light-bg;
 
+    .box-container {
+        @include grid(25rem);
+
+        .box {
+
+            h3 {
+                @include titleText(2.2rem);
+                padding: 1rem 0;
+            }
+
+            .link {
+                display: block;
+                padding: .5rem 0;
+                @include graphText(1.5rem);
+
+                i {
+                    padding-right: .5rem;
+                    color: $blue;
+                }
+            }
+
+            p {
+                padding: .5rem 0;
+                @include graphText(1.5rem);
+
+                span {
+                    color: $blue;
+                }
+            }
+
+            .email {
+                width: 100%;
+                border: $border;
+                padding: 1.6rem 1.4rem;
+                font-size: 1.6rem;
+                color: $light-color;
+                margin: 1rem 0;
+            }
+
+            .share {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
 
 
 

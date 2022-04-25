@@ -467,6 +467,52 @@ section {
 }
 
 /* ======= Footer Section/Seção de Rodapé ======= */
+.footer {
+  background: #f5f5f5;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #334;
+  padding: 1rem 0;
+}
+.footer .box-container .box .link {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+.footer .box-container .box .link i {
+  padding-right: 0.5rem;
+  color: #2597f4;
+}
+.footer .box-container .box p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+.footer .box-container .box p span {
+  color: #2597f4;
+}
+.footer .box-container .box .email {
+  width: 100%;
+  border: 0.2rem solid #334;
+  padding: 1.6rem 1.4rem;
+  font-size: 1.6rem;
+  color: #777;
+  margin: 1rem 0;
+}
+.footer .box-container .box .share {
+  margin-top: 1rem;
+}
+
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 1200px) {
   .header .contact-info {
