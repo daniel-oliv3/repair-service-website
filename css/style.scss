@@ -329,7 +329,47 @@ section {
 
 
 /* ======= Facilities Section/Seção de Instalações ======= */
+.facilities {
+    background: $light-bg;
 
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            background: $white;
+            padding: 3rem;
+            text-align: center;
+            border: $border;
+            box-shadow: $box-shadow;
+
+            &:hover {
+                background: $black;
+
+                h3 {
+                    color: $white;
+                }
+
+                p {
+                    color: $white;
+                }
+            }
+
+            img {
+                height: 10rem;
+                margin-bottom: .5rem;
+            }
+
+            h3 {
+                padding: 1rem 0;
+                @include titleText(2rem);
+            }
+
+            p {
+                @include graphText(1.4rem);
+            }
+        }
+    }
+}
 
 
 
