@@ -466,6 +466,7 @@ section {
   resize: none;
 }
 
+/* ======= Footer Section/Seção de Rodapé ======= */
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 1200px) {
   .header .contact-info {
