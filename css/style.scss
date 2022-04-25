@@ -433,7 +433,76 @@ section {
 
 
 /* ======= Reviews Section/Seção de Reviews ======= */
+.reviews {
+    background: $light-bg;
 
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            text-align: center;
+            padding: 3rem;
+            background: $white;
+            box-shadow: $box-shadow;
+            border: $border;
+
+            &:hover {
+                background: $black;
+
+                .text p {
+                    color: $white;
+                }
+
+                .user h3 {
+                    color: $white;
+                }
+            }
+
+            .star {
+
+                i {
+                    color: $blue;
+                    font-size: 1.7rem;
+                }
+            }
+
+            .text {
+                position: relative;
+                z-index: 0;
+                padding: 1.5rem 0;
+
+                i {
+                    font-size: 7rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    opacity: .3;
+                    color: $blue;
+                }
+
+                p {
+                    @include graphText(1.5rem);
+                }
+            }
+
+            .user {
+
+                img {
+                    height: 7rem;
+                    width: 7rem;
+                    border-radius: 50%;
+                    margin-bottom: .5rem;
+                }
+
+                h3 {
+                    @include titleText(1.7rem);
+                }
+            }
+        }
+    }
+}
 
 
 
