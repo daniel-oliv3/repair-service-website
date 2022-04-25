@@ -374,7 +374,61 @@ section {
 
 
 /* ======= Team Section/Seção de Time ======= */
+.team {
 
+    .box-container {
+        @include grid(25rem);
+        align-items: flex-start;
+
+        .box {
+            overflow: hidden;
+            text-align: center;
+
+            &:hover {
+                .content {
+                    margin-bottom: 0;
+                }
+            }
+
+
+            img {
+                width: 100%;
+            }
+
+            .content {
+                padding: 2rem;
+                margin-bottom: -7rem;
+
+                h3 {
+                    @include titleText(2rem);
+                }
+
+                p {
+                    @include titleText(1.4rem);
+                    padding: .5rem 0;
+                }
+
+                .share {
+                    margin-top: 1.5rem;
+
+                    a {
+                        height: 4.5rem;
+                        width: 4.5rem;
+                        line-height: 4.5rem;
+                        font-size: 4.5rem;
+                        margin: 0 .3rem;
+                        background: $black;
+                        color: $white;
+
+                        &:hover {
+                            background: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
