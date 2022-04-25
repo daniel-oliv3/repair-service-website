@@ -510,7 +510,32 @@ section {
   margin: 1rem 0;
 }
 .footer .box-container .box .share {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background: #334;
+  color: #fff;
+  margin-right: 0.3rem;
+  text-align: center;
+}
+.footer .box-container .box .share a:hover {
+  background: #2597f4;
+}
+.footer .credit {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #334;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.2rem solid #334;
+  text-align: center;
+}
+.footer .credit span {
+  color: #2597f4;
 }
 
 /* ======= Responsive/Responsividade ======= */
